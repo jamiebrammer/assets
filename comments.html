@@ -1,10 +1,13 @@
-  
 <div id="replybox"></div>
 
 <script>
+const urlParams = new URLSearchParams(window.location.search);
+const identifier = urlParams.get('identifier');
+console.log(queryString);
+	
 window.replybox = {
 	site: 'JOGB5ZeRop', 
-	identifier: 'UNIQUE_IDENTIFIER',
+	identifier: identifier,
 };
 </script>
 <script src="https://cdn.getreplybox.com/js/embed.js"></script>
